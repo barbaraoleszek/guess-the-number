@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+input {
+  padding: 10px;
+  width: 50%;
+}
