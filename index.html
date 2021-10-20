@@ -26,27 +26,31 @@
       <div class="lh-lg fs-1 text mt-5 mb-5">
         <p>
           &bull;&bull;&bull;
-          <span class="border border-white border-5 p-3">?</span>
+          <span class="border border-white border-5 p-3" id="user-guess"
+            >?</span
+          >
           &bull;&bull;&bull;
         </p>
       </div>
       <div>
         <div class="row">
-          <div class="col" id="#search-form">
-            <input type="number" id="user-numer" />
-            <div class="mt-5">
-              <button class="btn btn-light" id="check">Check</button>
-            </div>
+          <div class="col">
+            <form id="search-form">
+              <input type="number" id="user-num" placeholder="Guess now!" />
+              <div class="mt-5">
+                <button class="btn btn-light" id="submit">Check</button>
+              </div>
+            </form>
           </div>
           <div class="col">
-            <p>Start guessing!</p>
-            <p>Score: X</p>
+            <p id="tips">Start guessing!</p>
+            <p>Score: <span id="'score"></span></p>
             <p>Highest score: XX</p>
           </div>
         </div>
       </div>
       <div class="m-5">
-        <button class="btn btn-light">Wanna try again?</button>
+        <button class="btn btn-light" id="try-again">Wanna try again?</button>
       </div>
       <script src="/script.js"></script>
     </div>
