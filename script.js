@@ -9,7 +9,6 @@ let tryAgain = document.getElementById("try-again");
 let seeScore = document.querySelector(".score");
 let seeHighScore = document.querySelector(".highscore");
 let userNumber = document.getElementById("user-num");
-console.log(winningNumber);
 
 function handleSubmit(event) {
   event.preventDefault();
