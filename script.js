@@ -51,6 +51,7 @@ function checkUserNumber(userValue) {
   } else {
     userGuess.innerHTML = `${userValue}`;
     tips.innerHTML = `GREAT GUESS! You won!`;
+    document.querySelector(`body`).style.backgroundColor = `#60b347`;
     check.disabled = true;
     if (score > highscore) {
       highscore = score;
@@ -69,6 +70,7 @@ function handleRequest(event) {
   userValue;
   userGuess.innerHTML = `?`;
   check.disabled = false;
+  document.querySelector(`body`).style.backgroundColor = `black`;
 }
 
 tryAgain.addEventListener("click", handleRequest);
